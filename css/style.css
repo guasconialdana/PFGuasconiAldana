@@ -71,6 +71,7 @@ header{
 }
 
 .floating-boys{
+    width: 100%;
     position: absolute;
     top: 10%;
     z-index: -1;
@@ -696,6 +697,32 @@ footer{
     width: 100%;
 }
 
+/* AGRADECIMIENTO */
+.congrats{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.agradecimiento-img{
+    display: none;
+}
+
+.feedback-congrats{
+    margin: 0;
+    align-items: center;
+}
+
+.text-congrats{
+    text-align: center;
+}
+
+.feedback-congrats button{
+    margin: 0;
+}
+/* AGRADECIMIENTO */
+
 }
 
 
@@ -843,6 +870,14 @@ footer{
     }
 
     /* CARRITO */
+
+    /* AGRADECIMIENTO */
+
+    .congrats{
+        height: fit-content;
+    }
+
+    /* AGRADECIMIENTO */
 
     /* FOOTER */
     footer{
