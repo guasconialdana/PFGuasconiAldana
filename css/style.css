@@ -550,12 +550,13 @@ hr{
 /* AGRADECIMIENTO */
 .congrats{
     height: 100vh;
+    position: relative;
 }
     .congrats img{
-        width: 50vw;
+        max-width: 50vw;
         height: 100vh;
         position: absolute;
-        top: 2px;
+        top: 0;
         right: 0;
     }
 
@@ -573,8 +574,8 @@ hr{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 650px;
-    margin-left: 80px;
+    height: 100%;
+    padding-left: 80px;
 }
 
 .feedback-congrats button{
@@ -711,7 +712,6 @@ footer{
 
 /* AGRADECIMIENTO */
 .congrats{
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -722,22 +722,29 @@ footer{
 }
 
 .feedback-congrats{
-    margin: 0;
+    padding: 0;
     align-items: center;
 }
 
+    .feedback-congrats p{
+        font-size: 1.5em;
+    }
+
+    .feedback-congrats button{
+        margin: 0;
+        padding: 0;
+        height: 56px;
+        width: 250px;
+    }
+
 .text-congrats{
     text-align: center;
+    font-size: 3em;
 }
 
-.feedback-congrats button{
-    margin: 0;
-}
 /* AGRADECIMIENTO */
 
 }
-
-
 
 @media (max-width: 600px){
     /* HEADER */
@@ -887,7 +894,15 @@ footer{
     /* AGRADECIMIENTO */
 
     .congrats{
-        height: fit-content;
+        height: 100vh;
+    }
+
+    .text-congrats{
+        font-size: 2em;
+    }
+
+    .feedback-congrats p{
+        font-size: 1em;
     }
 
     /* AGRADECIMIENTO */
@@ -938,5 +953,15 @@ footer{
         height: 100px;
         width: 400px;
        }
+    /* AGRADECIMIENTO */
+    .text-congrats{
+        font-size: 1.5em;
+    }
+
+    .feedback-congrats button{
+        width: 200px;
+    }
+    /* AGRADECIMIENTO */
+
 }
 
