@@ -47,20 +47,23 @@
 header{
     overflow: hidden;
     position: relative;
+    height: 100vh;
 }
 
     header h1{
+        position: absolute;
+        top: 33%;
+        left: 10%;
         font-family: 'Le Murmure', sans-serif;
         font-size: 21em;
         z-index: 1;
-        margin-top: -600px;
         text-align: center;
     }
 
 .img-bg {
     min-width: 100%;
     z-index: -100;
-    position: relative;
+    position: absolute;
 }
 
 .text-header{
@@ -79,13 +82,16 @@ header{
 
 
 .boybg-center{
-    position: relative;
-    margin-left: 25%;
-    margin-top: -300px;
+    position: absolute;
+    z-index: 2;
+    top: 40%;
+    left: 33%;
     width: 40%;
 }
 
 .text-and-button{
+    position: absolute;
+    top: 80%;
     display: flex;
     justify-content: space-between;
     padding: 0 80px;
@@ -635,9 +641,15 @@ footer{
         display: none;
     }
     .boybg-center{
-            margin-left: 25%;
-            margin-top: -1000px;
-            width: 40%;
+            top: 25%;
+            left: 20%;
+            width: 60%;
+    }
+
+    header h1{
+        font-size: 18em;
+        left: 0;
+        top: 15%;
     }
 
     .text-header{
@@ -741,6 +753,7 @@ footer{
     .text-and-button{
         flex-direction: column;
         width: 100%;
+        top: 70%;
         padding: 0 40px;
     }
 
