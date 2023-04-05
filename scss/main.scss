@@ -7,6 +7,7 @@
     font-weight: normal;
   };
 @import "_vars";
+@import "_mixins";
 @import "_commons";
 @import "_nav";
 @import "_index"; 
@@ -15,4 +16,5 @@
 @import "_carrito";
 @import "_checkout";
 @import "_agradecimiento";  
+@import "_footer";
 @import "_media-queries";

@@ -1,0 +1,33 @@
+// agradecimiento
+.congrats{
+    height: 100vh;
+    position: relative;
+    img{
+        max-width: 50vw;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    p{
+        font-size: $textSm;
+    }
+}
+    
+.text-congrats{
+    font-weight: 200;
+    font-size: $textLg;
+    padding: 20px 20px;
+}
+
+.feedback-congrats{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    padding-left: 80px;
+    button{
+        @include margin (24px,0,24px,16px)
+    }
+}
+// agradecimiento

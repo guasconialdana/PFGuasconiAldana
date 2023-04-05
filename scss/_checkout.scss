@@ -1,0 +1,54 @@
+// checkout
+.form-container{
+    display: flex;
+    width: 100%;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.form1{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.campos{
+    display: flex;
+    flex-direction: column;
+    label{
+        margin-bottom: 8px;
+
+    }
+}
+
+.titulo-checkout{
+    @include margin(120px,0px,50px,25px)
+}
+
+.field{
+    outline: none;
+    margin-bottom: 24px;
+    width: 400px;
+    height: 32px;
+    &:focus{
+        border: 2px solid;
+        border-color: $mainColor;
+    }
+}
+
+.buttons-parent{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.button-checkout{
+    margin: 24px;
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+}  
+// checkout

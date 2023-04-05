@@ -1,6 +1,8 @@
 // colores
 $mainColor: rgb(56,78,132);
 $darkGray: rgb(24,24,24);
+$colorBorder: rgba(24,24,24,0.1);
+$colorBoxshadow: rgba(0,0,0,0.4);
 $lightGray: rgb(250,250,250);
 $white: rgb(255,255,255);
 $destructiveAction: rgb(230,45,45);
@@ -8,6 +10,7 @@ $hoverLink: rgb(97,180,232);
 $hoverPrimarybutton: rgb(67,105,199);
 $hoverSecondarybutton: rgba(67,105,199,0.1);
 $hoverDestructivebutton: rgba(230, 45, 45, 0.1);
+$navBg: rgba(250,250,250,0.5);
 
 // fuentes
 $mainFont: 'Dosis', sans-serif;
@@ -15,11 +18,18 @@ $titleFont: 'Stick No Bills', sans-serif;
 $headerFont: 'Le Murmure', sans-serif;
 
 // size textos
+$nameAutor: 0,75em;
 $textSm:1em;
 $textMd:1.5em;
-$textLarge:2em;
+$textLg:2em;
 $textXl: 3em;
 $textHighlight: 21em;
+$textHighlightmd: 18em;
+$textHighlightsm: 8em;
+$textHighlight320: 6em;
+$textSm320:0.8em;
+$textBold: bold;
+
 
 
 

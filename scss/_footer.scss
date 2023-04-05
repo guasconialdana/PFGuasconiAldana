@@ -1,0 +1,45 @@
+// footer
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: $darkGray;
+    padding-top: 80px;
+    padding-bottom: 40px;
+    padding-right: 80px;
+    padding-left: 80px;
+    width: 100%;
+}
+
+.footer-text{
+    color: $lightGray;
+}
+
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+
+.contact-right{
+    flex-direction: column;
+    text-align: left;
+    line-height: 2.1em;
+}
+
+.copyright{
+    text-align: center;
+}
+
+
+.slogan{
+    color: $lightGray;
+    line-height: 1.8em;
+    font-family: $titleFont;
+    font-size: $textLg;
+}
+
+.contact-title{
+    font-family: $mainFont;
+    font-size: $textMd;
+}
+// footer

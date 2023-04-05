@@ -1,0 +1,101 @@
+// productos
+.titulo-productos{
+    @include margin (120px,0px,50px,25px)
+}
+
+.titulo-filtros{
+    margin-bottom: 15px;
+}
+
+.filtros-mujer{
+    margin-top: 25px;
+}
+
+.productos{
+    display: grid;
+    grid-template-columns: 20% repeat(3,1fr);
+    grid-template-rows: repeat(2,80vh);
+    column-gap: 20px;
+    padding-right: 24px;
+    grid-template-areas:
+    "filtros prod1 prod2 prod3"
+    "filtros prod4 prod5 prod6";
+}
+
+.producto1{
+    grid-area: prod1;
+}
+
+.producto2{
+    grid-area: prod2;
+}
+
+.producto3{
+    grid-area: prod3;
+}
+
+.producto4{
+    grid-area: prod4;
+}
+
+.producto5{
+    grid-area: prod5;
+}
+
+.producto6{
+    grid-area: prod6;
+}
+
+.product-filter{
+    font-family: 'Dosis', sans-serif;
+    font-weight: 400;
+    padding-left: 25px;   
+    line-height: 2em;
+    grid-area: filtros;
+    ul{
+        li{
+            &:hover{
+                color: $mainColor;
+            }
+        }
+    }
+    h3{
+        font-weight: $textBold;
+    }
+}
+
+.product-card{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 95%;
+    border-radius: 4px;
+    background-color: $white;
+    justify-content: center;
+    border: solid;
+    border-color: $colorBorder;
+    cursor: default;
+    margin-bottom: 16px;
+    a{
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+    p{
+        padding-left: 24px;
+        margin-bottom: 8px;
+    }
+}
+
+
+ul{
+    li{
+        list-style-type: none;
+    }
+}
+
+.filtros-responsive{
+    display: none;
+}
+// productos

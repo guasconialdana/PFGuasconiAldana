@@ -1,0 +1,397 @@
+// responsive   
+        // MEDIA 1023PX
+@media (max-width:1023px){
+    // header
+    .floating-boys{
+        display: none;
+    }
+
+    .boybg-center{
+            top: 25%;
+            left: 20%;
+            width: 60%;
+    }
+
+    .titulo-header{
+        font-size: $textHighlightmd;
+        left: 0;
+        top: 15%;
+    }
+
+    .text-header{
+        font-size: $textSm;
+        width: 50%;
+    }
+
+    // ultima coleccion
+.ultima-coleccion{
+    flex-direction: column;
+    div{
+        width: 100%;
+        display: flex;
+        padding: 0px 80px;
+    }
+    h2{
+        padding-top: 24px;
+        text-align: center;
+    }
+    p{
+        padding: 0 16px;
+        line-height: 2em;
+    }
+    button{
+        width: 250px;
+    }
+}
+
+.collection-button{
+    align-items: center;
+    }
+
+    // productos
+.titulo-productos{
+    font-size: $textXl;
+}
+
+.productos{
+    padding-left: 24px;
+}
+
+.titulo-filtros{
+display: none;
+}
+
+.filtros-hm{
+    display: none;
+}
+
+.filtros-responsive{
+    display: initial;
+    width: 100%;
+}
+
+.product-filter{
+    padding: 0;
+}
+
+.productos{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 5% repeat(3,60vh);
+    grid-template-areas:
+    "filtros filtros"
+    "prod1 prod2"
+    "prod3 prod4"
+    "prod5 prod6";
+}
+
+
+.product-card{
+    height: 600px;
+}
+
+// checkout
+.form-container{
+    width: 100%;
+}
+
+.formulario{
+    padding: 0 16px;
+}
+
+.campos{
+    width: 100%;
+}
+
+.form1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}           
+
+.field{
+    width: 100%;
+}
+
+// agradecimiento
+.congrats{
+    @include d-flex(row,center,center)
+}
+
+.agradecimiento-img{
+    display: none;
+}
+
+.feedback-congrats{
+    padding: 0;
+    align-items: center;
+}
+
+    .feedback-congrats{
+        p{
+            font-size: $textMd;
+        }
+        button{
+            margin: 0;
+            padding: 0;
+            height: 56px;
+            width: 250px;
+        }
+    }
+
+.text-congrats{
+    text-align: center;
+    font-size: $textXl;
+}
+}
+
+    // MEDIA 600PX 
+@media (max-width: 600px){
+    //header
+    .titulo-header{
+        font-size: $textHighlightsm;
+    }
+
+    .boybg-center{
+        display: none;
+    }
+    
+    .text-and-button{
+        flex-direction: column;
+        width: 100%;
+        top: 70%;
+        padding: 0 40px;
+        button{
+            width: 100%;
+        }
+    }
+
+    .text-header{
+        text-align: left;
+        line-height: 1.2em;
+        width: 100%;
+    }
+
+    // ofertas
+    .sale{
+        padding: 75px 0;
+        p{
+            text-align: center;
+            margin-bottom: 4px;
+        }
+        h2{
+            padding: 24px;
+            font-size: $textLg;
+            margin-bottom: 16px;
+            font-weight: $textBold;
+            text-align: center;
+        }
+    }
+
+    .sale-conteiner{
+        display: flex;
+        padding-left: 20px;
+        width: 100% ;
+        overflow-x: auto;
+        justify-content: start;
+        &::-webkit-scrollbar{
+            display: none;
+        }
+    }
+
+    .sale-card{
+        width: 350px;
+        height: 400px;
+        margin-right: 20px;
+        padding: 0 8px;
+        &:hover{
+            box-shadow: none;
+            transform: translateY(0);
+        }
+    }
+
+    // ultima coleccion
+        .ultima-coleccion{
+            div{
+                padding: 0;
+            }
+        }
+
+    // subscripcion
+    .subscribe{
+        flex-direction: column;
+        padding: 40px;
+        input{
+            width: 100%;
+        }
+        h3{
+            font-size: $textMd;
+        }
+    }
+    
+    #email{
+        height: 40px;
+        padding: 0 8px;
+        margin-bottom: 24px;
+    }
+
+    // productos
+    .titulo-filtros{
+        font-size: $textMd;
+    }
+    
+    .productos{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 75px repeat(6,70vh);
+        grid-template-areas:
+        "filtros"
+        "prod1"
+        "prod2"
+        "prod3"
+        "prod4"
+        "prod5"
+        "prod6";
+    }
+    
+    .product-card{
+        height: 600px;
+    }
+
+    // carrito
+    .carrito{
+        display: flex;
+        flex-direction: column;
+        margin-left: 15px;
+    }
+        .shop{
+            img{
+                width: 150px;
+            margin-right: 20px;
+            }
+        }
+    
+    .item{
+        display: inline-flex;
+        align-items: center;
+        margin-bottom: 40px;
+        width: 50%;
+        margin-right: 0;
+    }
+    
+    .text-carrito{
+        flex-direction: column;
+        line-height: 2em;
+    }
+    
+    .resumen{
+        position: inherit;
+    }
+
+    .img-cardbs{
+        width: 200px;
+    }
+
+    .contenedor-bs{
+        max-width: 100%;
+
+    }
+
+    .tarjetas-shop{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    // agradecimiento
+
+    .congrats{
+        height: 100vh;
+    }
+
+    .text-congrats{
+        font-size: $textLg;
+    }
+
+    .feedback-congrats{
+        p{
+            font-size: $textSm;
+        }
+    }
+
+    // footer
+    footer{
+       padding: 40px 40px;
+    }
+    
+    .footer-content{
+        display: flex;
+        justify-content: start;
+        margin-bottom: 80px;
+    }
+    
+    .slogan{
+       display: none;
+    }
+    
+    .contact-title{
+        font-size: $textMd
+    }
+    
+}
+
+        // MEDIA 320PX
+
+@media (max-width:320px){
+    // header
+    .titulo-header{
+        font-size: $textHighlight320;
+    }
+
+    .text-header{
+        font-size: $textSm320;
+    }
+   
+    // subscripcion
+    #email{
+        width: 100%;
+    }
+
+    // productos
+    .productos{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 75px repeat(6,75vh);
+        grid-template-areas:
+        "filtros"
+        "prod1"
+        "prod2"
+        "prod3"
+        "prod4"
+        "prod5"
+        "prod6";
+    }
+    
+    .product-card{
+        height: 500px;
+    }
+    
+    // checkout
+    .button-checkout{
+        margin-bottom: 24px;
+        flex-direction: column-reverse;
+        align-items: center; 
+        height: 100px;
+        width: 400px;
+       }
+   
+       
+    // agradecimiento
+    .text-congrats{
+        font-size: $textMd;
+        button{
+            width: 200px;
+        }
+    }
+}
+

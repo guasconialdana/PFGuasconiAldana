@@ -1,0 +1,18 @@
+// carrito
+.shop-titulo{
+    @include margin(120px,0px,50px,45px)
+}
+
+.resumen{
+    position: sticky;
+    top: 120px;
+}
+
+hr{
+    border: 1px solid $colorBorder;
+}
+
+.contenedor-bs{
+    max-width: 600px;
+}
+// carrito
