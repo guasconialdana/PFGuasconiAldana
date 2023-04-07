@@ -183,6 +183,10 @@ header {
   padding: 0 80px;
 }
 
+.titulo-ofertas {
+  font-size: 3em;
+}
+
 .sale {
   background-color: rgb(250, 250, 250);
   text-align: center;
@@ -633,11 +637,43 @@ footer {
   .productos {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 5% repeat(3, 60vh);
+    grid-template-rows: 5% repeat(3, 65vh);
     grid-template-areas: "filtros filtros" "prod1 prod2" "prod3 prod4" "prod5 prod6";
   }
   .product-card {
     height: 600px;
+  }
+  .detail {
+    flex-direction: column;
+  }
+  .detail-titulo {
+    font-size: 3em;
+  }
+  .picture img {
+    width: 350px;
+    height: auto;
+  }
+  .detail-two img {
+    width: 70px;
+    height: auto;
+    padding: 4px;
+    justify-items: end;
+  }
+  .detail-content {
+    margin-left: 100px;
+    margin-top: 32px;
+    border-color: rgba(24, 24, 24, 0.1);
+    border-radius: 4px;
+    border-style: solid;
+    padding: 24px;
+    padding-bottom: 8px;
+    width: 500px;
+  }
+  .shop-titulo {
+    font-size: 3em;
+  }
+  .titulo-checkout {
+    font-size: 3em;
   }
   .form-container {
     width: 100%;
@@ -675,7 +711,7 @@ footer {
   .feedback-congrats button {
     margin: 0;
     padding: 0;
-    height: 56px;
+    height: 48px;
     width: 250px;
   }
   .text-congrats {
@@ -756,17 +792,45 @@ footer {
     padding: 0 8px;
     margin-bottom: 24px;
   }
+  .titulo-productos {
+    font-size: 2em;
+  }
   .titulo-filtros {
     font-size: 1.5em;
   }
   .productos {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 75px repeat(6, 70vh);
+    grid-template-rows: 75px repeat(6, 80vh);
     grid-template-areas: "filtros" "prod1" "prod2" "prod3" "prod4" "prod5" "prod6";
   }
   .product-card {
-    height: 600px;
+    height: auto;
+  }
+  .detail {
+    padding: 0 20px;
+  }
+  .detail-titulo {
+    font-size: 2em;
+  }
+  .contenedor-imagenes {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .picture {
+    flex-direction: column;
+  }
+  .picture img {
+    width: 100%;
+  }
+  .detail-content {
+    margin-left: 0;
+    margin-top: 32px;
+    border-style: none;
+    width: 300px;
+  }
+  .shop-titulo {
+    font-size: 2em;
   }
   .carrito {
     display: flex;
@@ -801,6 +865,9 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  .titulo-checkout {
+    font-size: 2em;
   }
   .congrats {
     height: 100vh;
@@ -839,11 +906,27 @@ footer {
   .productos {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 75px repeat(6, 75vh);
+    grid-template-rows: 75px repeat(6, 80vh);
     grid-template-areas: "filtros" "prod1" "prod2" "prod3" "prod4" "prod5" "prod6";
   }
   .product-card {
     height: 500px;
+  }
+  .detail-content {
+    width: 250px;
+  }
+  .picture {
+    padding: 0 10px;
+    flex-direction: row;
+  }
+  .picture img {
+    width: 150px;
+  }
+  .detail-two img {
+    width: 50px;
+  }
+  .contenedor-imagenes {
+    flex-direction: column;
   }
   .button-checkout {
     margin-bottom: 24px;
