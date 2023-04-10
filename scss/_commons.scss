@@ -1,17 +1,17 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-
-body{
-padding: 0;
-width: 100%;
-margin: 0;
 }
 
-a { 
-    color: $mainColor; 
+body {
+    padding: 0;
+    width: 100%;
+    margin: 0;
+}
+
+a {
+    color: $mainColor;
     text-decoration: none;
     font-family: $mainFont;
     font-weight: 300;
@@ -24,21 +24,21 @@ h1 {
     font-size: $textXl;
 }
 
-h2{
+h2 {
     color: $mainColor;
     font-family: $titleFont;
     font-weight: 500;
     font-size: $textLg;
 }
 
-h3{
+h3 {
     color: $darkGray;
     font-family: $mainFont;
     font-weight: 500;
     font-size: $textMd;
 }
 
-span{
+span {
     font-family: $mainFont;
     font-size: $textSm;
     font-weight: 300;
@@ -51,7 +51,7 @@ p {
     color: $darkGray;
 }
 
-.primary-button{
+.primary-button {
     border-radius: 32px;
     border-color: transparent;
     background-color: $mainColor;
@@ -60,39 +60,42 @@ p {
     width: 160px;
     padding-left: 16px;
     padding-right: 16px;
-    &:hover{
+
+    &:hover {
         background-color: $hoverPrimarybutton;
         cursor: pointer;
     }
 }
 
-.secondary-button{
+.secondary-button {
     @extend .primary-button;
     border-color: $mainColor;
     background-color: $lightGray;
     color: $mainColor;
-    &:hover{
+
+    &:hover {
         background-color: $hoverSecondarybutton;
     }
 }
 
-.destructive-button{
+.destructive-button {
     @extend .primary-button;
     background-color: $lightGray;
     border-color: $destructiveAction;
     color: $destructiveAction;
-    &:hover{
+
+    &:hover {
         background-color: $hoverDestructivebutton;
     }
 }
- 
-form{
+
+form {
     font-family: $mainFont;
     font-size: 300;
     color: $darkGray;
 }
 
-label{
+label {
     font-family: $mainFont;
     font-size: 300;
     font-weight: 100;
