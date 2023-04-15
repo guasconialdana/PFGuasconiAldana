@@ -462,8 +462,8 @@ ul li {
 .detail-titulo {
   margin-top: 120px;
   margin-right: 0px;
-  margin-bottom: 16px;
-  margin-left: 50px;
+  margin-bottom: 50px;
+  margin-left: 25px;
 }
 
 .picture {
@@ -505,7 +505,7 @@ ul li {
   margin-top: 120px;
   margin-right: 0px;
   margin-bottom: 50px;
-  margin-left: 45px;
+  margin-left: 25px;
 }
 
 .resumen {
@@ -864,6 +864,9 @@ hr {
   .titulo-filtros {
     font-size: 1.5em;
   }
+  .btn-filter {
+    width: 100%;
+  }
   .productos {
     display: grid;
     grid-template-columns: 1fr;
@@ -875,6 +878,7 @@ hr {
   }
   .detail {
     padding: 0 20px;
+    flex-direction: column;
   }
   .detail-titulo {
     font-size: 2em;
@@ -890,7 +894,7 @@ hr {
     width: 100%;
   }
   .detail-content {
-    margin-left: 0;
+    margin-left: 20px;
     margin-top: 32px;
     border-style: none;
     width: 300px;
@@ -935,11 +939,31 @@ hr {
   .titulo-checkout {
     font-size: 2em;
   }
+  .form1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .formulario {
+    padding: 0 16px;
+  }
+  .form-container {
+    width: 100%;
+  }
+  .campos {
+    width: 100%;
+  }
+  .field {
+    width: 100%;
+  }
   .congrats {
     height: 100vh;
   }
   .text-congrats {
     font-size: 2em;
+  }
+  .agradecimiento-img {
+    display: none;
   }
   .feedback-congrats p {
     font-size: 1em;
@@ -1020,6 +1044,9 @@ hr {
   }
   .text-congrats button {
     width: 200px;
+  }
+  .feedback-congrats {
+    padding-left: 40px;
   }
 }
 

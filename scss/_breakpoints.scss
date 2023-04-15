@@ -326,6 +326,10 @@ display: none;
     font-size: $textMd;
 }
 
+.btn-filter{
+    width: 100%;
+}
+
 .productos{
     display: grid;
     grid-template-columns: 1fr;
@@ -347,6 +351,7 @@ display: none;
 // detalle
 .detail{
     padding: 0 20px;
+    flex-direction: column;
 }
 
 .detail-titulo{
@@ -366,7 +371,7 @@ display: none;
 }
 
 .detail-content{
-    margin-left: 0;
+    margin-left: 20px;
     margin-top: 32px;
     border-style: none;
     width: 300px;
@@ -426,6 +431,29 @@ display: none;
     font-size: $textLg;
 }
 
+.form1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}       
+
+.formulario{
+    padding: 0 16px;
+}
+
+.form-container{
+    width: 100%;
+}
+
+.campos{
+    width: 100%;
+}
+
+.field{
+    width: 100%;
+}
+
+
 // agradecimiento
 
 .congrats{
@@ -434,6 +462,10 @@ display: none;
 
 .text-congrats{
     font-size: $textLg;
+}
+
+.agradecimiento-img{
+    display: none;
 }
 
 .feedback-congrats{
@@ -477,7 +509,6 @@ footer{
 }
 
 }
-
 
         // MEDIA 320PX
 
@@ -560,4 +591,8 @@ footer{
             width: 200px;
         }
     }
+
+.feedback-congrats{
+    padding-left: 40px;
+}
 }

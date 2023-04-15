@@ -3,7 +3,7 @@
     display: none;
 }
 .titulo-productos{
-    @include margin (120px,0px,50px,25px)
+    @include margin(120px,0px,50px,25px)
 }
 
 .titulo-filtros{
@@ -109,7 +109,7 @@ ul{
 }
 
 .detail-titulo{
-    @include margin(120px,0px,16px,50px)
+    @include margin(120px,0px,50px,25px)
 }
 
 .picture{
