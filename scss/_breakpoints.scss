@@ -469,6 +469,9 @@ display: none;
 }
 
 .feedback-congrats{
+    padding-left: 0;
+    align-items: center;
+    text-align: center;
     p{
         font-size: $textSm;
     }
@@ -591,8 +594,4 @@ footer{
             width: 200px;
         }
     }
-
-.feedback-congrats{
-    padding-left: 40px;
-}
 }
