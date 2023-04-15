@@ -1,3 +1,21 @@
+// carrito
+.shop-titulo{
+    @include margin(120px,0px,50px,45px)
+}
+
+.resumen{
+    position: sticky;
+    top: 120px;
+}
+
+hr{
+    border: 1px solid $colorBorder;
+}
+
+.contenedor-bs{
+    max-width: 600px;
+}
+
 // checkout
 .form-container{
     display: flex;
@@ -51,4 +69,36 @@
     display: flex;
     justify-content: space-between;
 }  
-// checkout
+
+// agradecimiento
+.congrats{
+    height: 100vh;
+    position: relative;
+    img{
+        max-width: 50vw;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    p{
+        font-size: $textSm;
+    }
+}
+    
+.text-congrats{
+    font-weight: $textLight;
+    font-size: $textLg;
+    padding: 20px 20px;
+}
+
+.feedback-congrats{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    padding-left: 80px;
+    button{
+        @include margin (24px,0,24px,16px)
+    }
+}

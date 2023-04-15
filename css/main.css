@@ -94,13 +94,11 @@ p {
 
 form {
   font-family: "Dosis", sans-serif;
-  font-size: 300;
   color: rgb(24, 24, 24);
 }
 
 label {
   font-family: "Dosis", sans-serif;
-  font-size: 300;
   font-weight: 100;
   color: rgb(24, 24, 24);
 }
@@ -131,6 +129,71 @@ nav img {
   color: rgb(97, 180, 232);
 }
 
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(24, 24, 24);
+  padding-top: 80px;
+  padding-bottom: 40px;
+  padding-right: 80px;
+  padding-left: 80px;
+  width: 100%;
+}
+
+.footer-text {
+  color: rgb(250, 250, 250);
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
+
+.contact-right {
+  flex-direction: column;
+  text-align: left;
+  line-height: 2.1em;
+}
+
+.copyright {
+  text-align: center;
+}
+
+.slogan {
+  color: rgb(250, 250, 250);
+  line-height: 1.8em;
+  font-family: "Stick No Bills", sans-serif;
+  font-size: 2em;
+}
+
+.contact-title {
+  font-family: "Dosis", sans-serif;
+  font-size: 1.5em;
+}
+
+#bg-error {
+  background-color: rgb(164, 208, 205);
+}
+
+.datos-error {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.text-error {
+  font-size: 1em;
+  font-family: "Dosis", sans-serif;
+  color: rgb(56, 78, 132);
+}
+
+.btn-error {
+  margin-top: 12px;
+}
+
 header {
   overflow: hidden;
   position: relative;
@@ -139,7 +202,19 @@ header {
 
 .titulo-header {
   position: absolute;
-  top: 33%;
+  top: 15%;
+  left: 42%;
+  font-size: 1em;
+  font-weight: 100;
+  font-family: "Dosis", sans-serif;
+  color: rgb(56, 78, 132);
+  z-index: 1;
+}
+
+.slogan-header {
+  position: absolute;
+  color: rgb(56, 78, 132);
+  top: 23%;
   left: 10%;
   font-size: 21em;
   font-family: "Le Murmure", sans-serif;
@@ -283,6 +358,10 @@ header {
   padding: 0 8px;
 }
 
+.filtros-mobile {
+  display: none;
+}
+
 .titulo-productos {
   margin-top: 120px;
   margin-right: 0px;
@@ -305,6 +384,10 @@ header {
   column-gap: 20px;
   padding-right: 24px;
   grid-template-areas: "filtros prod1 prod2 prod3" "filtros prod4 prod5 prod6";
+}
+
+.product-filter {
+  grid-area: filtros;
 }
 
 .producto1 {
@@ -369,10 +452,6 @@ header {
 
 ul li {
   list-style-type: none;
-}
-
-.filtros-responsive {
-  display: none;
 }
 
 .detail {
@@ -532,62 +611,23 @@ hr {
   margin-left: 16px;
 }
 
-footer {
-  display: flex;
-  flex-direction: column;
-  background-color: rgb(24, 24, 24);
-  padding-top: 80px;
-  padding-bottom: 40px;
-  padding-right: 80px;
-  padding-left: 80px;
-  width: 100%;
-}
-
-.footer-text {
-  color: rgb(250, 250, 250);
-}
-
-.footer-content {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 80px;
-}
-
-.contact-right {
-  flex-direction: column;
-  text-align: left;
-  line-height: 2.1em;
-}
-
-.copyright {
-  text-align: center;
-}
-
-.slogan {
-  color: rgb(250, 250, 250);
-  line-height: 1.8em;
-  font-family: "Stick No Bills", sans-serif;
-  font-size: 2em;
-}
-
-.contact-title {
-  font-family: "Dosis", sans-serif;
-  font-size: 1.5em;
-}
-
 @media (max-width: 1023px) {
   .floating-boys {
     display: none;
   }
   .boybg-center {
-    top: 25%;
+    top: 20%;
     left: 20%;
     width: 60%;
   }
   .titulo-header {
+    top: 8%;
+    left: 35%;
+  }
+  .slogan-header {
     font-size: 18em;
     left: 0;
-    top: 15%;
+    top: 6%;
   }
   .text-header {
     font-size: 1em;
@@ -627,9 +667,8 @@ footer {
   .filtros-hm {
     display: none;
   }
-  .filtros-responsive {
+  .filtros-mobile {
     display: initial;
-    width: 100%;
   }
   .product-filter {
     padding: 0;
@@ -640,26 +679,47 @@ footer {
     grid-template-rows: 5% repeat(3, 65vh);
     grid-template-areas: "filtros filtros" "prod1 prod2" "prod3 prod4" "prod5 prod6";
   }
-  .product-card {
+  .filtros-mobile {
+    grid-area: filtros;
+  }
+  .filtros-mobile div h3 {
+    color: rgb(56, 78, 132);
+    font-family: "Stick No Bills", sans-serif;
+    font-size: 1.5em;
+  }
+  .filter-list {
+    margin: 16px;
+  }
+  .filter-list h4 {
+    color: rgb(56, 78, 132);
+  }
+  .filter-list ul li {
+    margin-bottom: 8px;
+    color: rgb(24, 24, 24);
+  }
+  .filter-list .btn-filter {
+    width: 100%;
+  }
+  .filter-list .product-card {
     height: 600px;
   }
-  .detail {
+  .filter-list .detail {
     flex-direction: column;
   }
-  .detail-titulo {
+  .filter-list .detail-titulo {
     font-size: 3em;
   }
-  .picture img {
+  .filter-list .picture img {
     width: 350px;
     height: auto;
   }
-  .detail-two img {
+  .filter-list .detail-two img {
     width: 70px;
     height: auto;
     padding: 4px;
     justify-items: end;
   }
-  .detail-content {
+  .filter-list .detail-content {
     margin-left: 100px;
     margin-top: 32px;
     border-color: rgba(24, 24, 24, 0.1);
@@ -669,59 +729,65 @@ footer {
     padding-bottom: 8px;
     width: 500px;
   }
-  .shop-titulo {
+  .filter-list .shop-titulo {
     font-size: 3em;
   }
-  .titulo-checkout {
+  .filter-list .titulo-checkout {
     font-size: 3em;
   }
-  .form-container {
+  .filter-list .form-container {
     width: 100%;
   }
-  .formulario {
+  .filter-list .formulario {
     padding: 0 16px;
   }
-  .campos {
+  .filter-list .campos {
     width: 100%;
   }
-  .form1 {
+  .filter-list .form1 {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
   }
-  .field {
+  .filter-list .field {
     width: 100%;
   }
-  .congrats {
+  .filter-list .congrats {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
   }
-  .agradecimiento-img {
+  .filter-list .agradecimiento-img {
     display: none;
   }
-  .feedback-congrats {
+  .filter-list .feedback-congrats {
     padding: 0;
     align-items: center;
   }
-  .feedback-congrats p {
+  .filter-list .feedback-congrats p {
     font-size: 1.5em;
   }
-  .feedback-congrats button {
+  .filter-list .feedback-congrats button {
     margin: 0;
     padding: 0;
     height: 48px;
     width: 250px;
   }
-  .text-congrats {
+  .filter-list .text-congrats {
     text-align: center;
     font-size: 3em;
   }
 }
 @media (max-width: 600px) {
   .titulo-header {
+    top: 10%;
+    left: 20%;
+  }
+  .slogan-header {
     font-size: 8em;
+    left: 0;
+    top: 15%;
   }
   .boybg-center {
     display: none;
@@ -892,9 +958,23 @@ footer {
   .contact-title {
     font-size: 1.5em;
   }
+  .datos-error img {
+    width: 100%;
+  }
+  .text-error {
+    padding: 0 20px;
+    text-align: center;
+  }
+  .btn-error {
+    margin-top: 16px;
+  }
 }
 @media (max-width: 320px) {
   .titulo-header {
+    left: 9%;
+    font-size: 0, 75em;
+  }
+  .slogan-header {
     font-size: 6em;
   }
   .text-header {

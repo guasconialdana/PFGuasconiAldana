@@ -5,10 +5,21 @@ header{
     height: 100vh;
 }
 
-
 .titulo-header{
     position: absolute;
-    top: 33%;
+    top: 15%;
+    left: 42%;
+    font-size: $textSm;
+    font-weight: $textExtralight;
+    font-family: $mainFont;
+    color: $mainColor;
+    z-index: 1;
+}
+
+.slogan-header{
+    position: absolute;
+    color: $mainColor;
+    top: 23%;
     left: 10%;
     font-size: $textHighlight;
     font-family: $headerFont;

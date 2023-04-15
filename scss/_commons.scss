@@ -1,3 +1,4 @@
+// general
 * {
     margin: 0;
     padding: 0;
@@ -14,7 +15,7 @@ a {
     color: $mainColor;
     text-decoration: none;
     font-family: $mainFont;
-    font-weight: 300;
+    font-weight: $textRegular;
 }
 
 h1 {
@@ -27,27 +28,27 @@ h1 {
 h2 {
     color: $mainColor;
     font-family: $titleFont;
-    font-weight: 500;
+    font-weight: $textSemibold;
     font-size: $textLg;
 }
 
 h3 {
     color: $darkGray;
     font-family: $mainFont;
-    font-weight: 500;
+    font-weight: $textSemibold;
     font-size: $textMd;
 }
 
 span {
     font-family: $mainFont;
     font-size: $textSm;
-    font-weight: 300;
+    font-weight: $textRegular;
     color: $darkGray;
 }
 
 p {
     font-family: $mainFont;
-    font-weight: 300;
+    font-weight: $textRegular;
     color: $darkGray;
 }
 
@@ -91,13 +92,109 @@ p {
 
 form {
     font-family: $mainFont;
-    font-size: 300;
     color: $darkGray;
 }
 
 label {
     font-family: $mainFont;
-    font-size: 300;
-    font-weight: 100;
+    font-weight: $textExtralight;
     color: $darkGray;
+}
+
+
+//navbar
+nav{
+    background-color: $navBg;
+    backdrop-filter: blur(80px);
+    ul{
+        li{
+            margin: 20px;
+        }
+    }
+    img{
+        width: 120px;
+    }
+}
+
+.navbar-toggler{
+    border:none;
+    &:focus{
+        box-shadow: none;
+    }
+}
+
+.custom-link{
+    color: $mainColor;
+    font-weight: $textExtralight;
+    &:hover{
+        color: $hoverLink;
+        }
+}
+
+// footer
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: $darkGray;
+    padding-top: 80px;
+    padding-bottom: 40px;
+    padding-right: 80px;
+    padding-left: 80px;
+    width: 100%;
+}
+
+.footer-text{
+    color: $lightGray;
+}
+
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+
+.contact-right{
+    flex-direction: column;
+    text-align: left;
+    line-height: 2.1em;
+}
+
+.copyright{
+    text-align: center;
+}
+
+
+.slogan{
+    color: $lightGray;
+    line-height: 1.8em;
+    font-family: $titleFont;
+    font-size: $textLg;
+}
+
+.contact-title{
+    font-family: $mainFont;
+    font-size: $textMd;
+}
+
+// error 404
+#bg-error{
+    background-color: $errorScreem;
+}
+
+.datos-error{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.text-error{
+    font-size: $textSm;
+    font-family: $mainFont;
+    color: $mainColor;
+}
+
+.btn-error{
+    margin-top: 12px;
 }

@@ -1,4 +1,7 @@
 // productos
+.filtros-mobile{
+    display: none;
+}
 .titulo-productos{
     @include margin (120px,0px,50px,25px)
 }
@@ -20,6 +23,10 @@
     grid-template-areas:
     "filtros prod1 prod2 prod3"
     "filtros prod4 prod5 prod6";
+}
+
+.product-filter{
+    grid-area: filtros;
 }
 
 .producto1{
@@ -48,7 +55,7 @@
 
 .product-filter{
     font-family: 'Dosis', sans-serif;
-    font-weight: 400;
+    font-weight: $textMedium;
     padding-left: 25px;   
     line-height: 2em;
     grid-area: filtros;
@@ -95,7 +102,50 @@ ul{
     }
 }
 
-.filtros-responsive{
-    display: none;
+//detalles
+.detail{
+    display: flex;
+    height: 100vh;
 }
-// productos
+
+.detail-titulo{
+    @include margin(120px,0px,16px,50px)
+}
+
+.picture{
+    display: flex;
+    padding: 0 80px;
+    img{
+        width: 500px;
+        height: auto;
+    }
+}
+
+.detail-two{
+    img{
+        width: 100px;
+        height: auto;
+        padding: 4px;
+        justify-items: end;
+    }
+}
+
+.text-detail{
+    color: $darkGray;
+    font-size: $textMd;
+    font-family: $mainFont;
+}
+
+.detail-content{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-left: 120px;
+    div{
+        margin-bottom: 16px;
+
+    }
+    p{
+        margin: 0;
+    }
+}

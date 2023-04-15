@@ -7,15 +7,20 @@
 }
 
 .boybg-center{
-        top: 25%;
+        top: 20%;
         left: 20%;
         width: 60%;
 }
 
 .titulo-header{
+    top: 8%;
+    left: 35%;
+}
+
+.slogan-header{
     font-size: $textHighlightmd;
     left: 0;
-    top: 15%;
+    top: 6%;
 }
 
 .text-header{
@@ -65,9 +70,8 @@ display: none;
     display: none;
 }
 
-.filtros-responsive{
+.filtros-mobile{
     display: initial;
-    width: 100%;
 }
 
 .product-filter{
@@ -83,6 +87,33 @@ display: none;
     "prod1 prod2"
     "prod3 prod4"
     "prod5 prod6";
+}
+
+.filtros-mobile{
+    grid-area: filtros;
+    div{
+        h3{
+            color: $mainColor;
+            font-family: $titleFont;
+            font-size: $textMd;
+        }
+    }
+}
+
+.filter-list{
+    margin: 16px;
+    h4{
+        color: $mainColor;
+    }
+    ul{
+        li{
+            margin-bottom: 8px;
+            color: $darkGray;
+        }
+    }
+
+.btn-filter{
+    width: 100%;
 }
 
 .product-card{
@@ -185,14 +216,22 @@ display: none;
 .text-congrats{
     text-align: center;
     font-size: $textXl;
-}
+    }
+}   
 }
 
     // MEDIA 600PX 
 @media (max-width: 600px){
 //header
 .titulo-header{
+    top: 10%;
+    left: 20%;
+}
+
+.slogan-header{
     font-size: $textHighlightsm;
+    left: 0;
+    top: 15%;
 }
 
 .boybg-center{
@@ -422,13 +461,34 @@ footer{
     font-size: $textMd
 }
 
+// error 404
+.datos-error{
+    img{
+        width: 100%;
+    }
 }
+.text-error{
+    padding: 0 20px;
+    text-align: center;
+}
+
+.btn-error{
+    margin-top: 16px;
+}
+
+}
+
 
         // MEDIA 320PX
 
 @media (max-width:320px){
 // header
 .titulo-header{
+    left: 9%;
+    font-size: $nameAutor;
+}
+
+.slogan-header{
     font-size: $textHighlight320;
 }
 
@@ -501,4 +561,3 @@ footer{
         }
     }
 }
-
