@@ -697,29 +697,30 @@ hr {
     margin-bottom: 8px;
     color: rgb(24, 24, 24);
   }
-  .filter-list .btn-filter {
+  .btn-filter {
     width: 100%;
   }
-  .filter-list .product-card {
+  .product-card {
     height: 600px;
   }
-  .filter-list .detail {
+  .detail {
+    display: flex;
     flex-direction: column;
   }
-  .filter-list .detail-titulo {
+  .detail-titulo {
     font-size: 3em;
   }
-  .filter-list .picture img {
+  .picture img {
     width: 350px;
     height: auto;
   }
-  .filter-list .detail-two img {
+  .detail-two img {
     width: 70px;
     height: auto;
     padding: 4px;
     justify-items: end;
   }
-  .filter-list .detail-content {
+  .detail-content {
     margin-left: 100px;
     margin-top: 32px;
     border-color: rgba(24, 24, 24, 0.1);
@@ -729,52 +730,52 @@ hr {
     padding-bottom: 8px;
     width: 500px;
   }
-  .filter-list .shop-titulo {
+  .shop-titulo {
     font-size: 3em;
   }
-  .filter-list .titulo-checkout {
+  .titulo-checkout {
     font-size: 3em;
   }
-  .filter-list .form-container {
+  .form-container {
     width: 100%;
   }
-  .filter-list .formulario {
+  .formulario {
     padding: 0 16px;
   }
-  .filter-list .campos {
+  .campos {
     width: 100%;
   }
-  .filter-list .form1 {
+  .form1 {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
   }
-  .filter-list .field {
+  .field {
     width: 100%;
   }
-  .filter-list .congrats {
+  .congrats {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
   }
-  .filter-list .agradecimiento-img {
+  .agradecimiento-img {
     display: none;
   }
-  .filter-list .feedback-congrats {
+  .feedback-congrats {
     padding: 0;
     align-items: center;
   }
-  .filter-list .feedback-congrats p {
+  .feedback-congrats p {
     font-size: 1.5em;
   }
-  .filter-list .feedback-congrats button {
+  .feedback-congrats button {
     margin: 0;
     padding: 0;
     height: 48px;
     width: 250px;
   }
-  .filter-list .text-congrats {
+  .text-congrats {
     text-align: center;
     font-size: 3em;
   }
@@ -939,36 +940,11 @@ hr {
   .titulo-checkout {
     font-size: 2em;
   }
-  .form1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-  }
-  .formulario {
-    padding: 0 16px;
-  }
-  .form-container {
-    width: 100%;
-  }
-  .campos {
-    width: 100%;
-  }
-  .field {
-    width: 100%;
-  }
   .congrats {
     height: 100vh;
   }
   .text-congrats {
     font-size: 2em;
-  }
-  .agradecimiento-img {
-    display: none;
-  }
-  .feedback-congrats {
-    padding-left: 0;
-    align-items: center;
-    text-align: center;
   }
   .feedback-congrats p {
     font-size: 1em;
@@ -1043,12 +1019,6 @@ hr {
     align-items: center;
     height: 100px;
     width: 400px;
-  }
-  .text-congrats {
-    font-size: 1.5em;
-  }
-  .text-congrats button {
-    width: 200px;
   }
 }
 

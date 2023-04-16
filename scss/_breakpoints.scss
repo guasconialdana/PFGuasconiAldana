@@ -81,7 +81,7 @@ display: none;
 .productos{
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    grid-template-rows: 5% repeat(3,65vh);
+    grid-template-rows:5% repeat(3,65vh);
     grid-template-areas:
     "filtros filtros"
     "prod1 prod2"
@@ -111,6 +111,7 @@ display: none;
             color: $darkGray;
         }
     }
+}
 
 .btn-filter{
     width: 100%;
@@ -122,6 +123,7 @@ display: none;
 
 // detalle
 .detail{
+    display: flex;
     flex-direction: column;
 }
 
@@ -217,8 +219,7 @@ display: none;
     text-align: center;
     font-size: $textXl;
     }
-}   
-}
+} 
 
     // MEDIA 600PX 
 @media (max-width: 600px){
@@ -431,29 +432,6 @@ display: none;
     font-size: $textLg;
 }
 
-.form1{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-}       
-
-.formulario{
-    padding: 0 16px;
-}
-
-.form-container{
-    width: 100%;
-}
-
-.campos{
-    width: 100%;
-}
-
-.field{
-    width: 100%;
-}
-
-
 // agradecimiento
 
 .congrats{
@@ -464,14 +442,7 @@ display: none;
     font-size: $textLg;
 }
 
-.agradecimiento-img{
-    display: none;
-}
-
 .feedback-congrats{
-    padding-left: 0;
-    align-items: center;
-    text-align: center;
     p{
         font-size: $textSm;
     }
@@ -584,14 +555,5 @@ footer{
     align-items: center; 
     height: 100px;
     width: 400px;
-    }
-
-    
-// agradecimiento
-.text-congrats{
-    font-size: $textMd;
-        button{
-            width: 200px;
-        }
     }
 }
