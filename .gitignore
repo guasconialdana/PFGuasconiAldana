@@ -1,5 +1,4 @@
 node_modules/
-*.css.map
 *.vsc
 *.log
 *.ia
